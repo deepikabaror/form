@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #f00a79;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz5AsNKJFHvgQdp3qCdzvK_vZX-tPv3DfrBw&s');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: fixed;
+            /* background-image: linear-gradient(red,pink,orange,blue,purple); */
+        }
+        .container{
+            position: fixed;
+            /* margin: 50px; */
+            margin-top: 1%;
+            margin-left: 34%;
+            height: 101vh;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 5px;
+            /* border: 2px solid green; */
+            box-shadow: 0 0 20px 13px rgb(54, 247, 24);
+            background-color: rgb(8, 192, 243);
+            display: flex;
+            /* gap: 30px; */
+           
+        }
+        button{
+           /* padding: 1%; */
+           border-radius: 5px;
+           border: 1px solid pink;
+           background-color: rgb(138, 249, 28);
+           /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+           padding:20px; 
+           box-shadow:0 0 20px 5px #f00a79;
+           text-align: start;
+           font-weight: bold;
+           font-style: italic;
+           text-shadow: -1px -2px 3px rgb(252, 11, 163);
+           color: blue;
+           transition: 2s;
+        } 
+        h1{
+            margin-top: 2px;
+            color: rgb(201, 57, 105);
+            background-color: rgb(130, 130, 206);
+            border-radius: 8px;
+            text-shadow: 10px 10px 20px rgb(20, 217, 33);
+
+        }
+        /* button:hover{
+            background-color: cyan;
+            background-image: linear-gradient(circle red,orange,pink,yellow,green);
+            padding: 30px;
+        }  */
+        /* .form-group input[type="text"] {
+            padding: 5px 10px;
+            font-size: 14px; 
+            height: 30px; 
+        } */
+        section{
+            margin-top: 50px;
+            margin-left: 40px;
+            display: flex;
+            flex-direction: column;
+            font-size: medium;
+            gap: -2px;
+            padding: 5px 50px; /* Reduce padding */
+            font-size: 16px; /* Smaller font size */
+            height: 30px; /* Reduce height */
+            font-style: italic;
+            color: darkblue;
+            font-weight: bold;
+            text-shadow: 3px 5px 10px rgb(2, 141, 101);
+        }
+        footer{
+            margin-top: 33rem;
+            margin-left: 16rem;
+        }
+        .form-group {
+        display: flex; /* Align label and input side by side */
+        align-items: center; /* Vertically center the content */
+        gap: 10px; /* Space between label and input field */
+        }
+        
+        .form-group label {
+            width: 120px; /* Fixed width for labels to align properly */
+            font-weight: bold; /* Bold text for labels */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form>
+        <heading>
+            <MARQUEE><h1>THIS IS A REGISTRATION FORMS FILL IT</h1></MARQUEE>
+        </heading>
+        <section>
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="Enter your name" required/>
+            <br>
+            <label for="Last">Last:</label>
+            <input type="text" name="name" placeholder="Enter your last name" required/>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="Enter your email" required/>
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="Phone" name="Phone" placeholder="Enter your Number" required/>
+            <br>
+            <label for="dateofbirth">D.O.B:</label>
+            <input type="date" name="date" placeholder="Enter your date of birth" required/>
+            <br>
+            <label for="gender">Gender:</label>
+            <input type="gender" name="gender" placeholder="Enter your gender" required/>
+            <br>
+            <label for="Month">Month:</label>
+            <input type="month" name="month" placeholder="Enter month" required/>
+            <br>
+            <label for="week">Week:</label>
+            <input type="week" name="week" placeholder="Enter week" required/>
+            <br>
+            <label for="datetime">datetime:</label>
+            <input type="datetime" name="datetime" placeholder="Enter datetime" required/>
+            <br>
+            <label for="Message">Message:</label>
+            <input type="message" name="message" placeholder="message" required/>
+            <br>
+        </section>
+        <footer>
+            <button id="redirectButton">Click the Button</button>
+        </footer>
+        
+    </form>
+    </div>
+
+    <!-- javascript button only -->
+    <script>
+        // Add a click event listener to the button
+        document.getElementById('redirectButton').addEventListener('click', function () {
+            // Redirect to a new page
+            window.location.href = 'https://www.linkedin.com/in/deepika-baror-497059238/'; // Replace with your desired URL
+        });
+    </script>
+    
+</body>
+</html>
